@@ -9,8 +9,8 @@ float a=68.3;
 double v;
 char b[20];
 
-cin >> b >> v;
-cout << b << endl << a/x << endl << v;
+cin >> b >> v; //girdi alır
+cout << b << endl << a/x << endl << v; //çıktı alır
 
 
   return 0;

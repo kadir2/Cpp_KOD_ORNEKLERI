@@ -10,7 +10,7 @@ double v;
 char b[20];
 
 cin >> b >> v;
-cout << b << a/x << v;
+cout << b << endl << a/x << endl << v;
 
 
   return 0;

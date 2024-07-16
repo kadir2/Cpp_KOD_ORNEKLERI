@@ -5,12 +5,24 @@ using namespace std;
 
 int main(){
 
-float a[3][3]={{2.0,43,6.0},{2.0,5.0,7.0},{9.0,4.0,1.0}};
+float a[3][3]={{2,43,6},{2,5,7},{9,4,1}};
 float b[3]={2,5,3};
 
+
+cout<<"matrisi girin: "; //matrisi bu şekilde de girilebilir
 for(int i=0;i<3;i++){
     for(int j=0;j<3;j++){
-        cout<<a[i][j]<<" ";
+        cin>>a[i][j];
+    }
+}
+cout<<"sonuç matrisi girin: ";
+for(int i=0;i<3;i++)
+cin>>b[i];
+
+cout<<"girilen matris:"<<endl;
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        cout << a[i][j]<<" ";
     }
 cout<<endl;
 }
@@ -52,7 +64,7 @@ cout<<"x2: "<<b[1]<<endl;
 cout<<"x3: "<<b[2]<<endl; 
 
 /*
-for(int i=0;i<3;i++){
+for(int i=0;i<3;i++){      //test kısmı
     for(int j=0;j<3;j++){
         cout<<a[i][j]<<" ";
     }
@@ -64,5 +76,6 @@ for(int i=0;i<3;i++){
 cout<<endl;
 }
 */
+
 return 0;
 }

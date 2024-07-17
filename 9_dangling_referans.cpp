@@ -13,7 +13,7 @@ ptr1 = new int;
 ptr2 = ptr1;
 
 
-delete ptr1;
+delete ptr1; //aynı yeri gösterdiğinden ptr2 nin yeri de silinir.
 
 *ptr2=98;
 cout << *ptr2; // hata verebilir yani vermeli.

@@ -7,35 +7,42 @@ int main()
 
 
 int a = 20;
-int b;
 
-cout<<"a = "<<a<<endl;
+cout<<"                    a = "<<a<<endl<<"                    a =";
 
 for(int i = sizeof(a)*8-1; i > 0; i--){
-
+    if(i%8 == 0){
+        cout<< " " ;
+    }
  cout<< ((a>>i)&1) ;
 }
 
-b = ~a;
-cout<<endl;
+a = ~a;
+cout<<endl<<"one's complement of a =";
 
 for(int i = sizeof(int)*8-1; i > 0; i--){
+    if(i%8 == 0){
+        cout<< " " ;
+    }
+    
+ cout<< ((a>>i)&1) ;
+}
 
- cout<< ((b>>i)&1) ;
+cout<<endl<<"two's complement of a =";
+
+a=a+1;
+
+
+for(int i = sizeof(int)*8-1; i > 0; i--){
+    if(i%8 == 0){
+        cout<< " " ;
+    }
+  cout<< ((a>>i)&1) ;
 }
 
 cout<<endl;
 
-b=b+1;
-
-
-for(int i = sizeof(int)*8-1; i > 0; i--){
-  cout<< ((b>>i)&1) ;
-}
-
-cout<<endl;
-
-cout<<"b = "<<b<<endl;  
+cout<<"two's complement of a = "<<a<<endl;
 
     return 0;
 }
